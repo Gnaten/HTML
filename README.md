@@ -1,0 +1,3 @@
+# HTML
+All this repository does is store some of my HTML projects I have been working on... 
+It also gives me an indication of how much I have improved my Web Design skills over the months.
