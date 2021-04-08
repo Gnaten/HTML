@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measurement Animation</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ruler">
+        <div class="top"></div>
+        <div class="anti-shadow">
+            <div class="spinal-cord"></div>
+        </div>
+        <div class="bottom"></div>
+
+        <div class="counter">
+            <h2 class="num">5</h2>
+            <h3>mm</h3>
+        </div>
+    </div>
+    
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: teal;
+        overflow: hidden;
+    }
+
+
+
+
+
+    .ruler{
+        position: absolute;
+        top: 40%;
+        left: 25%;
+
+    }
+    .top, .bottom, .spinal-cord, .anti-shadow{
+        position: absolute;
+    }
+    .top, .bottom{
+        width: 75px;
+        height: 10px;
+        background: black;
+    }
+    .anti-shadow{
+        width: 10px;
+        height: 6969px;
+        background: transparent;
+        left: 33px;
+        top: -6710px;
+        overflow: hidden;
+    }
+    .spinal-cord{
+        width: 10px;
+        height: 6969px;
+        background: black;
+        top: 96.3%;
+    }
+    .bottom{
+        top: 250px;
+    }
+    .top, .spinal-cord{
+        animation: 1s ease-in upies;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+    }
+    .counter{
+        width: 200px;
+        height: 75px;
+        position: absolute;
+        top: 100px;
+        left: 50px;
+    }
+    .num{
+        color: white;
+        text-align: center;
+        font-family: 'Lexend', sans-serif;
+        font-size: 50px;
+        animation: 1s enlarge;
+        animation-fill-mode: forwards;
+        animation-delay: 1.8s;
+    }
+    h3{
+        color: transparent;
+        font-family: 'Lexend', sans-serif;
+        font-size: 40px;
+        animation: 3s reeveal;
+        animation-fill-mode: forwards;
+        animation-delay: 5s;
+        position: absolute;
+        left: 60px;
+    }
+    @keyframes upies{
+        to {transform: translateY(-1000px);}
+    }
+    @keyframes enlarge{
+        to {transform: scale(1.7);}
+    }
+    @keyframes reeveal{
+        to {color: white;}
+    }
+</style>
+<script>
+    function expo_marker(){
+        let numbers = document.getElementsByClassName('num');
+        console.log(numbers.length); //Checking if Element is active
+        var num = 6;
+        setInterval(() => {
+                numbers[0].innerHTML = num++
+            }, 1000);
+        setTimeout(function(){
+            setInterval(() => {
+                numbers[0].innerHTML = num++
+            }, 100);
+        }, 500);
+        setTimeout(function(){
+            setInterval(() => {
+                numbers[0].innerHTML = num++
+            }, 10);
+        }, 2000);
+        setTimeout(function(){
+            setInterval(() => {
+                numbers[0].innerHTML = num++
+            }, 1);
+        }, 2500);
+    }
+    window.onload = function(){
+        expo_marker()
+    }
+</script>
+</html>

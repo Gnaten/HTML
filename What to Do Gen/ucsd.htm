@@ -1,0 +1,666 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fw="http://technolutions.com/framework" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xhtml="http://www.w3.org/1999/xhtml"><head><meta http-equiv="X-UA-Compatible" content="IE=Edge" /><link rel="shortcut icon" href="//beatriton-ucsd-edu.cdn.technolutions.net/favicon.ico" /><link href="//fw.cdn.technolutions.net/framework/base.css?v=20210225" rel="stylesheet" /><link href="//beatriton-ucsd-edu.cdn.technolutions.net/shared/base.css" rel="stylesheet" /><link href="//beatriton-ucsd-edu.cdn.technolutions.net/shared/build-fonts.css?v=20170911164132" rel="stylesheet" /><link href="//beatriton-ucsd-edu.cdn.technolutions.net/shared/build-fonts.css?v=20170911164132" rel="stylesheet" /><link href="//beatriton-ucsd-edu.cdn.technolutions.net/shared/build.css?v=20170911164148" rel="stylesheet" /><script src="//fw.cdn.technolutions.net/framework/base.js?v=20210225"></script><script>/*<![CDATA[*/FW.Config['firstDay'] = 0; FW.Config['Citizenship.Default.Country'] = 'US'; FW.Config['Citizenship.PR'] = 'Permanent Resident'; FW.Config['CDN'] = '//beatriton-ucsd-edu.cdn.technolutions.net'; /*]]>*/</script><script async="async" xmlns:slate="http://technolutions.com/slate">/*<![CDATA[*/if (history.replaceState) history.replaceState(null, null, '/apply/update?id=59a4b1f5-fefd-4b96-a719-c2d002d1dedf');/*]]>*/</script><script src="//beatriton-ucsd-edu.cdn.technolutions.net/apply/base.js?v=20210225-636366800421672222"></script><meta content="width=device-width, initial-scale=1" name="viewport" class="cr" /><title xmlns:slate="http://technolutions.com/slate">UC San Diego</title></head><body><noscript><div style="background: #ffffcc; border-bottom: 2px solid #cccc99; padding: 5px 10px; margin-bottom: 0; text-align: center;">This website uses scripting to enhance your browsing experience. <a href="https://support.google.com/answer/23852">Enable JavaScript</a> in your browser and then reload this website.</div></noscript><div id="netblock" style="background: #ffffcc; border-bottom: 2px solid #cccc99; display: none; padding: 5px 10px; margin-bottom: 0; text-align: center;">This website uses resources that are being blocked by your network. Contact your network administrator for more information.</div><script>/*<![CDATA[*/if (window['FW'] == null) document.getElementById('netblock').style['display'] = 'block';/*]]>*/</script><style type="text/css">/*<![CDATA[*/BODY{
+    margin-top:100px;
+	font-family: "BrixSansRegular", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    line-height: 1.44;
+    color: #484949;
+    font-size: 18px;
+}
+
+/* ALL PARTS - OVERRIDE SLATE */
+.part_rows_container>div.part{
+	margin-bottom:0px;
+}
+
+/* DO NOT SHOW MOBILE */
+@media (max-width: 767px){
+.noshow_hidden-xs {
+    display: none !important;
+}
+}
+
+/* LINKS */
+A{
+	color:#006A96;
+    text-decoration: underline!important;
+}
+A:hover{
+	color:#00344A;
+    text-decoration: underline;
+}
+TR.plain A{
+	color:#006A96!important;
+    text-decoration: underline;
+}
+TR.plain A:hover{
+	color:#00344A!important;
+    text-decoration: underline;
+}
+A.social_link{
+	border-bottom:none;
+}
+
+IMG.welcome_image{
+	width:100%;
+	display:block;
+	margin-bottom:20px;
+}
+
+@media (min-width: 1025px){
+H1, H1.welcome{
+	font-size:3em!important;
+}
+}
+@media (min-width: 768px){
+H1, H1.welcome {
+    font-size: 2.4445em!important;
+}
+}
+H2{
+	margin-top:40px;
+}
+H2.to_do_title, H2.want_to_title{
+    width: 100%;
+    background-color: #006A96;
+    color: #FFF;
+    padding: 10px;
+    font-size: 20px;
+}
+/* FAQ */
+H2.faq{
+    font-size: 32px;
+    margin-top: 80px;
+    border-bottom: 1px solid #182B49;
+    padding-bottom: 10px;
+}
+H2.faq.first-child{
+	margin-top:40px;
+}
+H3.faq{
+	margin-top:30px;
+	margin-bottom:15px;
+	font-size:26px;
+}
+H3{
+	margin-top:30px;
+	margin-bottom:0px;
+}
+H4{
+	margin:0px;
+    padding:0px;
+    font-size:20px;
+    font-weight:900;
+}
+
+/* PLEASE COMPLETE TEXT */
+/*
+P.please_complete{
+	font-size:.8em;
+}
+*/
+
+/* SHOPPING SHEET */
+A.btn-regular {
+    background-color: #FFCD00;
+    color: #484949;
+    font-family: 'BrixSansBold';
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    min-width: 238px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0.8em 1.5em;
+    letter-spacing: 0.08em;
+    font-weight: normal;
+}
+A.btn-regular:focus, A.btn-regular:hover { color: #fff; background-color: #cca400; border-color: transparent }
+
+@media (min-width: 1200px){
+.container {
+    width: 1170px;
+}
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+SECTION.top_nav_section{
+    background-color: #006A96;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index:100;
+    height:60px;
+}
+SECTION.top_nav_section .container{
+	padding:0px!important;
+}
+ul.top_nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #006A96;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:200;
+}
+
+ul.top_nav li {
+    float: left;
+  padding-left:0px!important;
+}
+
+ul.top_nav li a {
+    display: block;
+    color: #FFF!important;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none!important;
+    border-bottom:none;
+    height:60px;
+}
+@media (max-width: 767px){
+ul.top_nav li a {
+    padding: 18px 5px;
+    font-size:.8em;
+}
+}
+
+ul.top_nav li a:hover {
+    background-color: #FFCD00;
+  color:#006A96!important;
+}
+ul.top_nav li a.ucsd_logo:hover{
+    background-color: #006A96;
+      }
+
+ul.top_nav li a.active {
+    background-color: #FFCD00!important;
+  color:#006A96!important;
+}
+
+ul.top_nav_planb{
+	margin-left:115px;
+}
+/*
+@media (max-width: 1350px){
+ul.top_nav_planb{
+	margin-left:60px;
+}
+}
+@media (max-width: 1200px){
+ul.top_nav_planb{
+	margin-left:115px;
+}
+}
+*/
+
+/* NOTIFICATION */
+.notification{
+	border:1px solid #CCC;
+	background-color:#EEE;
+	padding:30px 20px 20px 20px;
+    margin:40px 0;
+}
+.notification H4:last-child{
+	margin-top:20px;
+}
+.notification H4 span.new{
+	background-color:#FFCD00;
+    padding:2px;
+    font-size:.8em;
+}
+
+/* CHECKLIST */
+#part_admissions tr.column>th, #part_admissions tr.column>td, .column{
+	background-color:#FFCD00;
+}
+
+/* TEST SCORES */
+H3.test_title{
+	border-left:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	border-right:1px solid #CCC;
+    margin:30px 0px 0px 0px;
+    padding:5px;
+    color:#FFF;
+    background-color:#006A96;
+}
+
+/* FIX THE ... issue with the ITEMS CHECKLIST */
+#part_checklist_Items TABLE.table TD{
+	/*
+	overflow:auto !important;
+	*/
+	text-overflow: inherit !important;
+	white-space:normal !important;
+}
+
+/* APPLICANT INFORMATION TABLES */
+.long_table_container{
+	overflow: visible;
+	overflow-y: auto;
+}
+.long_table_container::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.long_table_container::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.long_table_container::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+.long_table_container::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+TABLE.simple{
+	border:1px solid #CCC;
+    width:100%;
+}
+TABLE.simple_margin_top{
+	margin-top:40px;
+	margin-bottom: 0px!important;
+}
+TABLE.simple THEAD TH{
+	border-bottom:1px solid #CCC;
+   	background-color:#006A96; /* FFCD00 */
+    text-transform:uppercase;
+    color:#FFF; /* 535353 */
+}
+TABLE.simple TH{
+	text-align:left;
+    padding:5px 15px 5px 5px;
+    color:#767676;
+    font-weight:300;
+    width:180px;
+}
+TABLE.simple_test_scores THEAD TH{
+   	background-color:#182B49; /* FFCD00 */
+	font-size:14px;
+    text-align: center;
+}
+TABLE.simple TD{
+	text-align:left;
+    padding:5px 5px 5px 15px;
+    color:#535353;
+}
+TABLE.simple_test_scores TD{
+	padding:5px;
+    text-align:center;
+}
+TABLE.simple TH, TABLE.simple TD{
+	border-bottom:1px solid #CCC;
+    /*
+    font-size:.9em;
+    */
+}
+TABLE.simple TH, TABLE.simple_test_scores TD{
+	border-right:1px solid #CCC;
+}
+TABLE.simple_test_scores TD:last-chil{
+	border-right:none;
+}
+TABLE.simple TBODY TR:last-child TH, TABLE.simple TBODY TR:last-child TD{
+	border-bottom:none;
+    text-decoration: none;
+}
+TABLE.simple TR.highlighted TH, TABLE.simple TR.highlighted TD{
+   background-color:#FFCD00; /* fff9df */
+}
+.simple_action_item{
+	background-color:#EEE;
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+    padding:10px 5px 10px 5px;
+    width:100%;
+    text-align:center;
+}
+.simple_action_item P{
+	margin:0px;
+}
+
+/* CONTACT INFO TABLE */
+TABLE.contact_info TR:first-child TH, TABLE.contact_info TR:first-child TD{
+	border-top:none!important;
+}
+TABLE.contact_info TH, TABLE.contact_info TD{
+	padding:5px;
+	border-top:1px solid #CCC;
+    text-align:left;
+}
+TABLE.contact_info TH{
+	font-weight:900;
+	border-right:1px solid #CCC;
+}
+
+/* WANT TO ITEMS */
+.want_to{
+	display:list-item;
+    /*
+    margin-left:20px;
+    */
+    margin:5px 0px 5px 20px;
+}
+
+/* MARKETING AREA */
+.marketing{
+	margin-top:40px;
+}
+
+/* FOOTER */
+footer.cr{
+	margin-top:30px;
+}
+
+
+
+
+
+
+/* ADD FROM PAGES PREVIOUSLY */
+  H1{
+        font-size:3em;
+        margin-top:0px;
+        padding-top:0px;
+      }
+      H1 SPAN.ucsd{
+        font-size:.8em;
+      }
+      H3{
+		  /*
+        margin:0px;
+		  */
+      }
+      H3.spacer{
+        margin-bottom:10px;
+      }
+
+      IMG.fill{
+        width:100%;
+      }
+
+      /* in order to have things line up with the col spacing */
+      /*
+      .msg_container, TABLE.intro_table TD{
+        padding:0 5px;
+      }
+      */
+      .space_below{
+        margin-bottom:30px;
+      }
+
+      SPAN.welcome{
+        font-weight:bold;
+        font-size:1.3em;
+      }
+
+      P.address{
+        color:#777;
+        font-style:italic;
+        margin-top:20px;
+      }
+
+      /* REQUIRED  HEADER  */
+      .required_container{
+        background-color:#2a6b95;
+        color:#FFF;
+        padding:10px 20px;
+      }
+
+      /* SECONDARY IMPORTANCE */
+      H3.secondary{
+        font-size:1.5em; /* make smaller than rest */
+        margin-top:30px;
+      }
+      .i_want_to_list_item{
+        display:list-item;
+        margin-left:20px;
+      }
+
+      /* PORTAL TITLE */
+      IMG.portal_title{
+        margin-bottom:20px;
+      }
+
+      /*
+      .decisions_when{
+        background-color:#bfffb4;
+        padding:20px;
+      }
+      */
+          .msg_decisions_when{
+                margin-bottom:20px;
+          }
+
+      P.info_small_callout{
+        padding:5px!important;
+        background-color:#FFCD00;
+        display:inline;
+      }
+
+      /* MARKETING BLOCK */
+      .marketing{
+        margin-top:30px;
+      }
+
+      /* GREY BACKGROUNDS THE BUILT IN ACTIONS / FORMS */
+      DIV#part_963f8151-60d8-425f-93a2-3948cbe640e3, DIV#part_f40607ad-700a-457e-a49d-5b210bed8c8b{
+        background-color:#ececec;
+                /*
+        padding:20px;
+                */
+      }
+      DIV#part_963f8151-60d8-425f-93a2-3948cbe640e3 H3, DIV#part_f40607ad-700a-457e-a49d-5b210bed8c8b H3{
+        padding:20px 0 10px 20px;
+      }
+
+      /* Welcome area */
+  TABLE.simple{
+	  /*
+        margin-top:20px;
+	  */
+        margin-bottom:30px;
+        border:1px solid #CCC;
+}
+ TABLE.simple THEAD TH{
+        border-bottom:1px solid #CCC;
+   background-color:#FFCD00;
+   text-transform:uppercase;
+        color:#535353;
+  }
+ TABLE.simple TH{
+        text-align:left;
+        padding:5px 15px 5px 5px;
+  color:#767676;
+   font-weight:300;
+}
+TABLE.simple TD{
+        text-align:left;
+        padding:5px 5px 5px 15px;
+        color:#535353;
+}
+TABLE.simple TH, TABLE.simple TD{
+        border-bottom:1px solid #CCC;
+  font-size:.9em;
+}
+TABLE.simple TH{
+        border-right:1px solid #CCC;
+}
+TABLE.simple TBODY TR:last-child TH, TABLE.simple TBODY TR:last-child TD{
+        border-bottom:none;
+}
+ TABLE.simple TR.highlighted TH, TABLE.simple TR.highlighted TD{
+   background-color:#fff9df;
+      }
+
+/* status update */
+#part_1c661c05-4361-48f8-8acc-c7687e7c8851 > div:first-child{
+border: 1px solid #2a6b95;
+padding:20px;
+margin:30px 0;
+}
+/* status update header */
+#part_1c661c05-4361-48f8-8acc-c7687e7c8851 H3{
+margin-bottom:10px;
+}
+/* payment due */
+#part_c6199a58-e0dd-455c-8458-70cead3ba936 TABLE{
+  /*
+border: 1px solid #aa0000;
+padding:20px;
+  */
+margin:0 0 30px 0;
+}
+IMG.admitted_banner{
+width:100%;
+margin-bottom:30px;
+}
+H4.i_want_to_on_off_campus.secondary{
+margin-top:20px;
+}
+H4.i_want_to_on_off_campus{
+margin:10px 0;
+font-weight:bold;
+}
+P.portal_faq{
+margin-bottom:30px;
+}
+
+/* AFTER Apply Area */
+#after_apply_msg H3, #after_apply_msg_waitlist H3{
+  background-color:#286b95;
+  padding:10px;
+  color:#FFF;
+  margin-bottom:10px;
+ }
+#after_apply_msg LI{
+  margin:3px 0;
+  }
+#after_apply_msg .msg_container{
+  font-weight:bold;
+}
+ #after_apply_msg_waitlist{
+  }
+
+
+      /* Financial Aid links */
+      .fae{
+            border: 1px solid #2a6b95;
+    padding: 20px;
+    margin: 30px 0;
+      }
+
+  /* fix this for spacing issues */
+      .part_rows_container>div.part{
+        margin:0px;
+      }
+
+      /* custome grid-framework */
+      .grid-container{
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    /*-- our cleafix hack -- */
+   .grid-container .row:before,
+   .grid-container .row:after {
+        content:"";
+        display: table ;
+        clear:both;
+    }
+
+   .grid-container [class*='col-'] {
+        float: left;
+        min-height: 1px;
+        width: 16.66%;
+        /*-- our gutter -- */
+    }
+
+    /* Josh add padding */
+   .grid-container [class*='col-'] {
+     padding:0 5px;
+    }
+
+    .grid-container .col-1{ width: 100%; }
+   .grid-container  .col-2{ width: 50%; }
+    .grid-container .col-3{ width: 33.33%;    }
+    .grid-container .col-4{ width: 25%; }
+    .grid-container .col-5{ width: 20%; }
+    .grid-container .col-6{ width: 16.66%;   }
+      /*
+    .grid-container .col-1{ width: 16.66%; }
+   .grid-container  .col-2{ width: 33.33%; }
+    .grid-container .col-3{ width: 50%;    }
+    .grid-container .col-4{ width: 66.66%; }
+    .grid-container .col-5{ width: 83.33%; }
+    .grid-container .col-6{ width: 100%;   }
+      */
+
+    /*-- some extra column content styling --*/
+      /*
+   .grid-container [class*='col-'] > p {
+     padding: 0;
+     margin: 0;
+    }
+      */
+
+      @media all and (max-width:800px){
+        /*
+        .grid-container .col-1{ width: 33.33%;  }
+        .grid-container .col-2{ width: 50%;     }
+        .grid-container .col-3{ width: 83.33%;  }
+        .grid-container .col-4{ width: 100%;    }
+       .grid-container  .col-5{ width: 100%;    }
+        .grid-container .col-6{ width: 100%;    }
+        */
+
+        .grid-container .row .col-2:last-of-type{
+            width: 100%;
+        }
+
+        .grid-container .row .col-5 ~ .col-1{
+            width: 100%;
+        }
+    }
+      @media all and (max-width:650px){
+        .grid-container .col-1{ width: 100%;     }
+        .grid-container .col-2{ width: 100%;    }
+        .grid-container .col-3{ width: 100%;    }
+        .grid-container .col-4{ width: 100%;    }
+        .grid-container .col-5{ width: 100%;    }
+        .grid-container .col-6{ width: 100%;    }
+    }/*]]>*/</style><section class="top_nav_section"><div class="container"><div class="row"><ul class="top_nav"><li><a class="ucsd_logo" href="/apply/status"><img src="//beatriton-ucsd-edu.cdn.technolutions.net/img/logo_UCSD_white_applicant_portal.png" style="height:30px;display:block;" /></a></li></ul></div></div></section><section><div class="container"><div class="row"><style xmlns:slate="http://technolutions.com/slate">/*<![CDATA[*/.print { display: none; } @media print { display: initial; }/*]]>*/</style><p style="float: right;" xmlns:slate="http://technolutions.com/slate"><a href="download.pdf?s=59a4b1f5-fefd-4b96-a719-c2d002d1dedf&amp;output=letter.pdf">Download PDF</a></p><p class="update_released" style="font-weight: bold;" xmlns:slate="http://technolutions.com/slate">March 19, 2021</p><head xmlns:slate="http://technolutions.com/slate"><link href="//beatriton-ucsd-edu.cdn.technolutions.net/shared/build_letters_only.css?v=20180207110000" rel="stylesheet" type="text/css" /><title></title><style type="text/css">/*<![CDATA[*/.c_navbar, footer.cr {display:none !important;} .letter_container_inner, #multiple_letters {margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px;} p.update_released {display:none;} #multiple_letters {text-align:center; border: 1px solid #ccc; display: block; margin-top:50px;} #multiple_letters ul {list-style: none;} .ucsd_logo_bluegold {margin-bottom: 20px;} p.bordered {border:1px solid #000; padding:5px;} .toptable {padding: 20px 0 10px; display:grid;} p.first {padding-top: 15px;} /*]]>*/</style></head><body xmlns:slate="http://technolutions.com/slate"><div class="letter_container_inner"><img alt="logo" src="//beatriton-ucsd-edu.cdn.technolutions.net/www/images/UCSanDiegoLogo-BlueGold.png" style="width:167px; padding: 0 0 10px;" /><div class="toptable"><div style="padding: 0; grid-column: 1;">Nathan Punyataweekul</div><div style="padding: 0; grid-column: 2; text-align: right;"><nobr>March 19, 2021</nobr><br /><nobr>Application ID: 8164686</nobr></div></div><p class="first">Dear Nathan:<br /><br />
+        Thank you for giving us $70. After glossing over your lackluster GPA and underwhelming SAT
+scores, we firmly denied you three months ago and decided to keep you waiting until now.
+UC San Diego recieved many applications from applicants who were had significantly higher
+qualifications than you did. In Fall 2020 alone, 99,000 suckers just like you gave us money so we
+could tell them to fuck off. We even allowed 5,900 of them to get in.
+Our applicant pool was hilarious massive, with some students even demonstrating strong enough
+academics and extracurriculars for us to consider them for admission. You were not a part of this
+group.
+If giving us more money remains a goal for you, please consider applying as a transfer student so
+you can recieve this letter again in two years. Every year, we pity invite over 2,000 transfer
+students that we remembered rejecting earlier. If you're interested in spending the new two years
+of your life focusing on being a part of that group, visit .admissions.ucsd.edu/transfer for more
+information.
+I encourage you to try and salvage some of your self esteem by remembering the time you beat
+some dweeby nerds in a debate competition in the hope that it would help you get in here. Have
+fun at your safety school.<br><br>
+Sincerely,<br /><br /><img alt="" src="//beatriton-ucsd-edu.cdn.technolutions.net/www/images/LeShane%20Signature(1).png" style="width: 200px; height: 48px;" /></p><p>LeShane O. Saddler<br />
+Director of Admissions<br /><br /><strong>Office of Admissions</strong><br />
+University of California San Diego &#x2022; 9500 Gilman Drive #0021 &#x2022; La Jolla, California 92093<br />
+Tel: (858) 534-4831 &#x2022; Fax: (858) 534-5629 &#x2022; <a href="https://admissions.ucsd.edu">admissions.ucsd.edu</a></p><div class="letter_footer" style="color:#808080; font-size:.8em; margin-top:20px;">&#xA0;</div></div></body><p style="margin-top: 50px; text-align: center;" xmlns:slate="http://technolutions.com/slate"><a href="status">Return to Application Status</a></p><div style="clear: both;"></div></div></div></section><footer class="cr"><footer data-module="footer" class="cr"><div class="c_footer-address-bar cr"><div class="c_container cr"><div class="c_row cr"><div class="c_col-xs-6 c_col-sm-3 c_footer-brand-wrap cr"><a class="c_footer-brand cr" href="https://admissions.ucsd.edu/" target="_blank" data-module="footer"><img alt="UC San Diego" class="c_img-responsive cr" src="//beatriton-ucsd-edu.cdn.technolutions.net/img/logo_UCSD_white.png" /></a></div><div class="c_col-xs-6 c_col-sm-9 c_footer-address-wrap cr"><address class="c_footer-address cr">9500 Gilman Drive, <br class="cr" />Mail Code 0021, <br class="cr" />
+La Jolla, CA 92093-0021<br class="cr" /><a class="c_footer-tel cr" href="tel:8585344831" data-module="footer">(858) 534-4831</a></address></div></div></div></div><div class="c_footer-copyright cr no-print"><div class="c_container cr"><div class="c_row cr"><div class="c_col-xs-12 cr"><div class="c_footer-social-links c_pull-right cr"><ul class="c_list-inline cr"><li class="cr"><a href="https://www.facebook.com/UCSanDiegoLife/" title="Facebook" data-module="footer" class="cr social_link"><em class="c_fa c_fa-facebook cr"></em><span class="cr">Facebook</span></a></li><li class="cr"><a href="https://twitter.com/ucsdadmissions/" title="Twitter" data-module="footer" class="cr social_link"><em class="c_fa c_fa-twitter cr"></em><span class="cr">Twitter</span></a></li><li class="cr"><a href="https://www.linkedin.com/company/university-of-california-at-san-diego/" title="Linkedin" data-module="footer" class="cr social_link"><em class="c_fa c_fa-linkedin cr"></em><span class="cr">Linkedin</span></a></li><li class="cr"><a href="https://www.instagram.com/ucsdadmissions/" title="Instagram" data-module="footer" class="cr social_link"><em class="c_fa c_fa-instagram cr"></em><span class="cr">Instagram</span></a></li></ul></div><p class="c_text-center c_pull-left c_small cr">&#xA9; 2021 Regents of the University of California. All rights reserved. <span class="c_hidden-xs cr"><span class="c_sep cr"></span><a href="https://admissions.ucsd.edu/terms-of-use/" data-module="footer" class="cr">Terms of Use</a></span><span class="c_hidden-xs cr"><span class="c_sep cr"></span><a href="https://police.ucsd.edu" data-module="footer" class="cr">Health &amp; Safety</a></span></p><p class="c_text-center c_pull-left c_small c_visible-xs cr"><a href="https://admissions.ucsd.edu/terms-of-use/" data-module="footer" class="cr"><strong class="cr">Terms</strong></a><span class="c_sep cr"></span><a href="https://police.ucsd.edu/" data-module="footer" class="cr"><strong class="cr">Health &amp; Safety</strong></a></p></div></div></div></div></footer></footer></body></html>

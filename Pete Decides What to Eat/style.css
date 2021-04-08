@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(94, 94, 94);
+  font-family: "Montserrat", sans-serif;
+}
+.metropolitan {
+  z-index: 1;
+}
+.frame {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#peter-saurus {
+  width: 3000px;
+  position: absolute;
+  top: -100px;
+}
+.hulk {
+  height: 7%;
+  width: 100%;
+  background: rgb(238, 255, 195);
+  position: absolute;
+  top: 0px;
+}
+.deception {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  border: 2px solid gray;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+}
+#a,
+#b,
+#c {
+  width: 25px;
+  height: 5px;
+  background: rgb(151, 151, 151);
+  border-radius: 0.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#a {
+  top: 25%;
+}
+#b {
+  top: 50%;
+}
+#c {
+  top: 75%;
+}
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main {
+  background: linear-gradient(
+    to left bottom,
+    rgba(242, 252, 252, 0.1),
+    rgba(255, 255, 255, 0.7)
+  );
+  width: 90%;
+  height: 800px;
+  border-radius: 0.5rem;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+.cmd {
+  border: 4px dashed rgb(232, 116, 255);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 69px;
+  width: 30%;
+  height: 20%;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  transform: translateX(-50%);
+}
+.display-box {
+  position: absolute;
+  left: 23%;
+  top: 45%;
+  transform: translateY(-50%, -50%);
+}
+.ans {
+  text-align: center;
+  width: 200%;
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: underline;
+}
+.chat {
+  width: 25%;
+  position: absolute;
+  left: 300px;
+  top: 250px;
+}
+.snoot {
+  width: 160px;
+  height: 120px;
+  background: transparent; /* rgba(255, 0, 0, 0.2); */
+  position: absolute;
+  left: 66.5%;
+  top: 51%;
+  cursor: pointer;
+}
+.shivv {
+  background: black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.shower,
+h6 {
+  text-align: center;
+  color: white;
+  font-size: 69px;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+h6 {
+  font-size: 15px;
+  top: 93%;
+}
+#prereq {
+  color: rgb(72, 190, 101);
+}
+#arrowAnim {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 25%;
+  top: -17%;
+  scale: 0.2;
+}
+.arrow {
+  width: 5vw;
+  height: 5vw;
+  border: 2.5vw solid;
+  border-color: #5776ff transparent transparent #5776ff;
+  transform: rotate(-135deg);
+  animation: rainbow 3s infinite;
+}
+.arrowSliding {
+  position: absolute;
+  animation: slide 4s linear infinite;
+}
+.delay1 {
+  animation-delay: -3s;
+}
+.delay2 {
+  animation-delay: -2s;
+}
+.delay3 {
+  animation-delay: -1s;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-15vw);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-9vw);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(9vw);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(15vw);
+  }
+}
+@keyframes rainbow {
+  0% {
+    border-color: #ff5757 transparent transparent #ff5757;
+  }
+  20% {
+    border-color: #ffca57 transparent transparent #ffca57;
+  }
+  40% {
+    border-color: #fff457 transparent transparent #fff457;
+  }
+  60% {
+    border-color: #57ff5f transparent transparent #57ff5f;
+  }
+  80% {
+    border-color: #579aff transparent transparent #579aff;
+  }
+  100% {
+    border-color: #a057ff transparent transparent #a057ff;
+  }
+}

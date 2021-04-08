@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation: Move up</title>
+</head>
+<body>
+    <div class="block"></div>
+</body>
+
+<style>
+    .block{
+        background-color: grey;
+        width: 50px;
+        height: 200px;
+        position:absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .block{
+        animation-delay: 3s;
+        animation: 2s ease moveup;
+        animation-fill-mode: both;
+    }
+
+
+
+
+
+
+    @keyframes moveup{
+        from { transform: translate(-50%, -50%);}
+        to { transform: translate(-50%, -100%);}
+    }
+</style>
+<script>
+    function pleasegivemesomecoc(e){
+        if(typeof e.onselectstart != "undefined") e.onselectstart = function(){
+            return false
+        };
+        else if(typeof e.MozUserSelect != "default") e.MozUserSelect = "none";
+        else e.onmousedown = function(){
+            return false
+        };
+        e.style.cursor = "default";
+    }
+    window.onload = function(){
+        pleasegivemesomecoc(document.body)
+    }
+</script>
+</html>

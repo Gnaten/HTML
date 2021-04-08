@@ -1,0 +1,339 @@
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coom v2.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap" rel="stylesheet">
+ </head>
+ <body>
+    <div class="csgo">
+       <div id="a">
+          <div id="stalkb">
+             <div id="nut-1b">
+                <div id="nut-2b"></div>
+             </div>
+             <div id="detonationb">
+             </div>
+             <div id="stalk">
+                <div class="buffer">
+                   <div id="shadow-play">
+                      <div id="stalker"></div>
+                   </div>
+                </div>
+                <div id="nut-1">
+                   <div id="nut-2"></div>
+                </div>
+                <div id="detonationc"></div>
+                <div id="detonation">
+                   <div id="slit"></div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div class="D-bry">
+          <div class="I"></div>
+          <div class="love"></div>
+          <div class="apple-"></div>
+          <div class="sauce"></div>
+          <div class="no"></div>
+          <div class="cap"></div>
+       </div>
+    </div>
+    <div class="ruler">
+       <div class="top"></div>
+       <div class="anti-shadow">
+          <div class="spinal-cord"></div>
+       </div>
+       <div class="bottom"></div>
+       <div class="counter">
+          <h2 class="num">5</h2>
+          <h3>μm</h3>
+       </div>
+    </div>
+ </body>
+ <style>
+    body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent !important;
+    }
+    .csgo{
+    background: #7B3F61;
+    width: 100%;
+    min-height: 100vh;
+    }
+    #nut-1, #nut-2, #nut-1b, #nut-2b {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: #dd6b4d;
+    border-radius: 50%;
+    }
+    #nut-1{
+    left: 100%;
+    top: 100%;
+    }
+    #nut-2{
+    position: relative;
+    left: -15px;
+    }
+    #stalk, #stalkb{
+    width: 65px;
+    height: 150px;
+    background: #dd6b4d;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    }
+    #detonation, #detonationb, #detonationc{
+    width: 70px;
+    height: 55px;
+    background: #dd6b6d;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    position: relative;
+    top: -30px;
+    left: -2px;
+    overflow: hidden;
+    }
+    #slit{
+    width: 3px;
+    height: 15px;
+    background: #2a0404;
+    position: absolute;
+    left: 50%;
+    top: -15%;
+    }
+    #detonationc{
+    background: rgb(9, 4, 42);
+    position: absolute;
+    top: -27px;
+    left: 1%;
+    }
+    #stalkb, #detonationb, #nut-1b, #nut-2b{
+    background: #09042A;
+    }
+    #nut-1b, #nut-2b{
+    top: 130px;
+    }
+    #nut-1b{
+    top: 150px;
+    left: 65px;
+    }
+    #nut-2b{
+    position: relative;
+    top: 50px;
+    left: -10px;
+    }
+    #stalk{
+    left: 15px;
+    }
+    #stalkb{
+    left: 52%;
+    }
+    .buffer{
+    width: 83px;
+    height: 700px;
+    position: absolute;
+    top: -350%;
+    overflow: hidden;
+    }
+    #stalker, #shadow-play{
+    width: 65px;
+    height: 650px;
+    background: #dd6b4d;
+    position: absolute;
+    }
+    #shadow-play{
+    background: #09042A;
+    top: 550px;
+    left: 18px;
+    }
+    #stalker{
+    left: -18px;
+    }
+    .D-bry{
+    width: 100px;
+    height: 100px;
+    border: 1px dashed black;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .I, .love, .apple-, .sauce, .no, .cap{
+    width: 0;
+    height: 0;
+    position: relative;
+    }
+    .I, .love, .no, .apple-, .sauce{
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid rgb(204, 204, 204);
+    animation: 2s disperse;
+    animation-delay: 2.8s;
+    }
+    .cap{
+    background: rgb(204, 204, 204);
+    width: 20px;
+    height: 8px;
+    animation: 3.5s disperse;
+    animation-delay: 2.8s;
+    }
+    .I{
+    left: 34%;
+    top: -85%;
+    }
+    .love{
+    left: 245%;
+    top: 23%;
+    }
+    .apple-{
+    left: 73%;
+    top: -35%;
+    }
+    .sauce{
+    left: 76%;
+    top: 52%;
+    }
+    #detonation, #detonationb, #detonationc, #shadow-play{
+    animation: 1s ease-in moveup;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    }
+    .ruler{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    }
+    .top, .bottom, .spinal-cord, .anti-shadow{
+    position: absolute;
+    }
+    .top, .bottom{
+    width: 75px;
+    height: 10px;
+    background: black;
+    }
+    .anti-shadow{
+    width: 10px;
+    height: 6969px;
+    background: transparent;
+    left: 33px;
+    top: -6710px;
+    overflow: hidden;
+    }
+    .spinal-cord{
+    width: 10px;
+    height: 6969px;
+    background: black;
+    top: 96.3%;
+    }
+    .bottom{
+    top: 250px;
+    }
+    .top, .spinal-cord{
+    animation: 1s ease-in upies;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    }
+    .counter{
+    width: 200px;
+    height: 75px;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    }
+    .num{
+    color: white;
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-size: 50px;
+    animation: 1s enlarge;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
+    }
+    h3{
+    color: transparent;
+    font-family: 'Lexend', sans-serif;
+    font-size: 40px;
+    animation: 3s reeveal;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+    position: absolute;
+    top: 60px;
+    left: 75px;
+    }
+    body{
+    animation: shakeNbake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+    animation-delay: 2.8s;
+    }
+    @keyframes upies{
+    to {transform: translateY(-1000px);}
+    }
+    @keyframes enlarge{
+    to {transform: scale(1.7);}
+    }
+    @keyframes reeveal{
+    to {color: white;}
+    }
+    @keyframes moveup{
+    to {transform: translateY(-600px);}
+    }
+    @keyframes shakeNbake{
+    10%, 90%{
+    transform: translate3d(-1px, 0, 0)
+    }
+    20%, 80%{
+    transform: translate3d(2px, 0, 0)
+    }
+    30%, 50%, 70%{
+    transform: translate3d(-4px, 0, 0)
+    }
+    40%, 60%{
+    transform: translate3d(4px, 0, 0)
+    }
+    }
+    @keyframes disperse{
+    to {transform: translateY(2000px) rotate(6900deg)}
+    }
+ </style>
+ <script>
+    function expo_marker(){
+        let numbers = document.getElementsByClassName('num');
+        var num = 6;
+        setTimeout(function(){
+            setInterval(() => {
+                numbers[0].innerHTML = num++
+            }, 1000);
+            setTimeout(function(){
+                setInterval(() => {
+                    numbers[0].innerHTML = num++
+                }, 100);
+            }, 500);
+            setTimeout(function(){
+                setInterval(() => {
+                    numbers[0].innerHTML = num++
+                }, 10);
+            }, 2000);
+            setTimeout(function(){
+                setInterval(() => {
+                    numbers[0].innerHTML = num++
+                }, 1);
+            }, 2500);
+        }, 1500);
+    };
+    window.onload = function(){
+        expo_marker()
+    }
+ </script>
+ 
+ 
